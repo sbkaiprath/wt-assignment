@@ -1,0 +1,51 @@
+.progress{
+    width: 100%;
+    display: flex;
+    margin: 20px 0px;
+}
+
+.graph-container {
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+ }
+ 
+ .graph-donut {
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    text-align: center;
+ }
+ 
+ .graph-donut canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+ }
+ 
+ .graph-title {
+    margin-top: 75px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+ }
+ 
+ .percent {
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    margin-top: 65px;
+ }
+ 
+ .percent:after {
+    content: '%';
+ }
+ @media (max-width:768){
+    .progress{
+       display: table;
+       width: auto;
+    }
+
+ }
